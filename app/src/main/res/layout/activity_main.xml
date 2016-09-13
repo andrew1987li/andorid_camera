@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="station.dev.com.photo_camera.MainActivity"
+    android:background="@color/Black">
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/img_background"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+       >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginTop="20dip"
+            android:layout_weight ="50">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="StateOfStations"
+                android:id="@+id/textView"
+                android:textColor="@color/Gray"
+                android:layout_marginTop="10dp"
+                />
+
+
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Controller Connected"
+                android:id="@+id/chk_stationfirst"
+                android:textColor="@color/Gray"
+                android:theme="@style/MyCheckBox"
+                android:layout_marginTop="31dp"
+                android:checked="false"
+                android:background="@color/LightGrey"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share ID 3 Connected"
+                android:id="@+id/chk_stationthird"
+                android:buttonTint="@color/White"
+                android:textColor="@color/Gray"
+                android:layout_marginTop="15dp"
+                android:background="@color/LightGrey"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share ID 4 Connected"
+                android:textColor="@color/Gray"
+                android:id="@+id/chk_stationthirdsec"
+                android:background="@color/LightGrey"
+               />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Internet Connected"
+                android:textColor="@color/Gray"
+                android:id="@+id/chk_internet"
+                android:buttonTint="@color/White"
+               android:layout_marginTop="15dp"
+                android:background="@color/LightGrey"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/txt_time"
+                android:textColor="@color/Gray"
+                android:layout_marginTop="20dip"/>
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dip"
+            android:layout_weight="50">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+
+               >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User Count:"
+                    android:textColor="@color/Gray"
+                    android:textSize="20dip"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/lbl_usercount" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="1"
+                    android:textColor="@color/Gray"
+                    android:textSize="20dip"
+                    android:id="@+id/txt_usercount"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dip"/>
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+"
+                    android:id="@+id/bt_plus"
+                    android:layout_marginLeft="20dip"
+                    android:layout_gravity="center_vertical"/>
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:id="@+id/bt_minus"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TakePhotoNow"
+                android:id="@+id/bt_take_photo"
+                android:layout_gravity="center_horizontal" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="80dip"
+        android:layout_height="30dip"
+        android:text=""
+        android:id="@+id/txt_setting"
+        android:layout_gravity="right" />
+</FrameLayout>

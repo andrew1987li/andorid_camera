@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="station.dev.com.photo_camera.SettingsActiviy">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="60dip">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="10dip">
+
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Camera Settins"
+                android:id="@+id/bt_camerasettings"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dip"/>
+            <Button
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:text="Network Settings"
+                android:id="@+id/bt_netsettings"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dip"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Connections"
+                android:id="@+id/bt_connections"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dip"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set Time Between photos"
+                android:textSize="25dip"
+                android:editable="false"
+                android:enabled="false"
+                android:id="@+id/lbl_interval"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dip"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="00:01"
+                android:id="@+id/edit_interval"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dip"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                >
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:id="@+id/bt_minus"
+                    android:layout_gravity="center_horizontal" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+"
+                    android:id="@+id/bt_plus"
+                    android:layout_gravity="center_horizontal" />
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="60dip"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="10dip">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:id="@+id/bt_save" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:id="@+id/bt_cancel"
+            android:layout_marginLeft="30dip"/>
+    </LinearLayout>
+
+
+</FrameLayout>

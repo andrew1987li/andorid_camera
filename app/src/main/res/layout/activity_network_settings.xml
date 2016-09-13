@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="station.dev.com.photo_camera.NetworkSettingsActivity">
+    <Button
+        android:layout_width="65dp"
+        android:layout_height="34dp"
+        android:text="Back"
+        android:id="@+id/bt_back"
+        android:layout_gravity="right|top" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="50dip"
+        android:layout_marginBottom="60dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Network Setting"
+            android:id="@+id/lbl_networksetting"
+            android:layout_gravity="center_horizontal" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView"
+            android:layout_gravity="center_horizontal">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FTP Address"
+                        android:id="@+id/lbl_ftpaddress"
+                        android:layout_marginTop="20dip"
+                        />
+
+                    <EditText
+                        android:layout_width="300dip"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edit_ftpaddress"
+                        android:background="@drawable/shape"
+                        android:layout_marginTop="10dip"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="User Name"
+                        android:id="@+id/lbl_username"
+                        android:layout_marginTop="20dip"/>
+
+                    <EditText
+                        android:layout_width="300dip"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edit_username"
+                        android:background="@drawable/shape"
+                        android:layout_marginTop="10dip"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Password"
+                        android:id="@+id/lbl_password"
+                        android:layout_marginTop="20dip"/>
+
+                    <EditText
+                        android:layout_width="300dip"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edit_password"
+                        android:background="@drawable/shape"
+                        android:layout_marginTop="10dip"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FTP Directory"
+                        android:id="@+id/lbl_ftpdic"
+                        android:layout_marginTop="20dip"/>
+
+                    <EditText
+                        android:layout_width="300dip"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edit_ftp_directory"
+                        android:background="@drawable/shape"
+                        android:layout_marginTop="10dip"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:id="@+id/bt_save" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:id="@+id/bt_cancel"
+            android:layout_marginLeft="30dip"/>
+    </LinearLayout>
+</FrameLayout>
